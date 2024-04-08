@@ -17,7 +17,7 @@ const Hero = () => {
   ]
   return (
     <>
-      <div className="relative   bg-background pb-[60px] pt-[80px] lg:pt-[100px]">
+      <div className="relative   bg-background pb-[60px] pt-[90px] lg:pt-[100px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-6/12">
