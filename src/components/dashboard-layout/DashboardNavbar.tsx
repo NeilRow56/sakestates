@@ -53,16 +53,16 @@ function DashboardNavbar() {
             <div className=" space-x-2">
               <DropdownMenu>
                 <DropdownMenuTrigger className=" text-primary">
-                  <Avatar className="mt-2 h-12 w-12">
-                    <AvatarImage src="/profile.jpg" />
-                    <AvatarFallback>DR</AvatarFallback>
+                  <Avatar className="mt-2 h-10 w-10">
+                    <AvatarImage src={user.avatarUrl ?? '/profile.png'} />
+                    <AvatarFallback>USER</AvatarFallback>
                   </Avatar>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuLabel>
                     <Avatar className="h-12 w-12 ">
-                      <AvatarImage src="/profile.jpg" />
-                      <AvatarFallback>DR</AvatarFallback>
+                      <AvatarImage src={user.avatarUrl ?? '/profile.png'} />
+                      <AvatarFallback>USER</AvatarFallback>
                     </Avatar>
                   </DropdownMenuLabel>
                   <DropdownMenuSeparator />
@@ -70,6 +70,9 @@ function DashboardNavbar() {
                     <h2>{user.email}</h2>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
+                  <DropdownMenuItem>
+                    <Link href="/user/profile">Profile</Link>
+                  </DropdownMenuItem>
                   <DropdownMenuItem>
                     <Link href="/dashboard">Dashboard</Link>
                   </DropdownMenuItem>
@@ -89,7 +92,7 @@ function DashboardNavbar() {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-            <div className="pt-4">
+            <div className="pt-2">
               <Button asChild size="sm" className="ml-4  px-6 ">
                 <Link href="/login">{user.firstName}-active</Link>
               </Button>

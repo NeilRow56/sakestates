@@ -3,7 +3,7 @@ import { ServicesTabs } from './ServicesTabs'
 
 const TabbedServices = () => {
   return (
-    <section className="bg-slate-50 pb-12 pt-20 dark:bg-slate-900 lg:pb-[90px] lg:pt-[120px]">
+    <section className="bg-background pb-12 pt-20 dark:bg-slate-900 lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

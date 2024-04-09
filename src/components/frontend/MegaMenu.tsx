@@ -136,7 +136,7 @@ const megaMenuContent = [
 
 export default function MegaMenu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="">
       <NavigationMenuList className="space-x-4">
         {megaMenuContent.map((item, i) => {
           return (

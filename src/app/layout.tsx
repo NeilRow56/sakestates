@@ -28,7 +28,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <main>{children}</main>
+            <main className="">{children}</main>
             <ToastContainer
               position="bottom-right"
               autoClose={5000}

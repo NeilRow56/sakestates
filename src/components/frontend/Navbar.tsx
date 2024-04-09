@@ -106,6 +106,9 @@ const Navbar = async () => {
                     <Link href="/dashboard">Dashboard</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
+                    <Link href="/user/profile">Profile</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
                     <Link href="/edgestore">edgestore</Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator className="bg-gray-200" />
